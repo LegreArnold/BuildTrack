@@ -1,0 +1,14 @@
+table,colonne,nom_complet,description,type,obligatoire,regle_qualite
+chantiers,id_chantier,Identifiant chantier,Identifiant unique de chaque chantier,Entier,True,Doit etre unique et non nul
+chantiers,nom_chantier,Nom du chantier,Denomination officielle du chantier,Texte,True,Ne doit pas etre vide
+chantiers,ville,Ville,Ville d'implantation du chantier,Texte,True,Ne doit pas etre vide
+chantiers,type_ouvrage,Type d'ouvrage,Categorie de l'ouvrage construit,Texte,True,"Valeurs autorisees : Logement, Bureau, Hopital, Ecole, Centre commercial, Hotel, Infrastructure publique"
+chantiers,statut,Statut du chantier,Etat d'avancement du chantier,Texte,True,"Valeurs autorisees : En cours, Termine, En pause, Planifie"
+finances,budget_prevu,Budget prevu,"Budget initialement alloue au chantier pour le mois concerne, en euros",Decimal,True,Doit etre positif et superieur a 0
+finances,budget_reel,Budget reel,"Depenses reelles constatees sur le chantier pour le mois concerne, en euros",Decimal,True,Doit etre positif
+finances,ecart,Ecart budgetaire,"Difference entre budget reel et budget prevu. Positif = depassement, Negatif = economie",Decimal,False,Calcule automatiquement : budget_reel - budget_prevu
+emissions_co2,source,Source d'emission,Origine des emissions de CO2 sur le chantier,Texte,True,"Valeurs autorisees : Transport, Materiaux, Energie, Engins de chantier"
+emissions_co2,tonnes_co2,Tonnes de CO2 emises,Quantite de CO2 effectivement emise sur le chantier pour le mois concerne,Decimal,True,Doit etre positif ou nul
+emissions_co2,objectif_co2,Objectif CO2,Seuil d'emissions CO2 a ne pas depasser dans le cadre des engagements RSE de Bouygues,Decimal,True,Doit etre positif et superieur a 0
+unites_operationnelles,region,Region,Region geographique de l'unite operationnelle responsable du chantier,Texte,True,Doit correspondre a une region administrative francaise
+unites_operationnelles,responsable,Responsable,Nom du responsable de l'unite operationnelle,Texte,True,Ne doit pas etre vide
