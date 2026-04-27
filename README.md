@@ -3,6 +3,10 @@
 Projet realise dans le cadre d'une candidature au poste de
 Data Analyst en alternance chez Bouygues Batiment France.
 
+## Apercu du dashboard
+
+![Dashboard BuildTrack](docs/dashboard_preview.png)
+
 ---
 
 ## Contexte
