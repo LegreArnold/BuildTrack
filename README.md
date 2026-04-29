@@ -1,7 +1,7 @@
 # BuildTrack — Dashboard Performance Financiere et CO2
 
-Projet realise dans le cadre d'une candidature au poste de
-Data Analyst en alternance chez Bouygues Batiment France.
+Projet de pilotage financier et environnemental simulant
+le suivi budgetaire et la performance de chantiers BTP.
 
 ## Apercu du dashboard
 
